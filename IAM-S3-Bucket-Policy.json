@@ -1,13 +1,15 @@
 {
-	"Version": "2012-10-17",
-	"Statement": [
-		{
-			"Sid": "PublicReadGetObject",
-			"Effect": "Allow",
-			"Principal": "*",
-			"Action": "s3:GetOject",
-			"Resource": "arn:aws:s3:::jenkins-admin-bucket/*"
-
-		}
-	]
+  "Id": "Policy1586986735045",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1586986733117",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::jenkins-admin-bucket/*",
+      "Principal": "*"
+    }
+  ]
 }
